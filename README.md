@@ -6,6 +6,7 @@ Currently has hard dependencies:
 * Rais 3.1+
 * kaminari (future: also will_paginate, mongoid-pagination)
 * Mongoid (future: also ActiveRecord)
+* less
 
 
 ## Installation

@@ -1,3 +1,5 @@
+require 'less-rails'
 require 'kaminari'
 require 'pagaxian/version'
+require 'pagaxian/engine'
 require 'pagaxian/acts_as_paged_datatable'
