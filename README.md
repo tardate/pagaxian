@@ -1,6 +1,12 @@
 # Pagaxian
 
-TODO: Write a gem description
+A work-in-progress refactoring to a gem of my personal ajax pagination and search pattern using DataTables and kaminari.
+
+Currently has hard dependencies:
+* Rais 3.1+
+* kaminari (future: also will_paginate, mongoid-pagination)
+* Mongoid (future: also ActiveRecord)
+
 
 ## Installation
 
