@@ -1,5 +1,12 @@
 // dataTables customisation
 
+table.table.datatable {
+  .table-hover;
+  .table-striped;
+  .table-bordered;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
 
 .dataTables_wrapper {
   .row {
@@ -25,3 +32,89 @@ table.table thead .sorting_desc { background: asset-url('pagaxian/datatables/sor
 
 table.table thead .sorting_asc_disabled { background: asset-url('pagaxian/datatables/sort_asc_disabled.png') no-repeat center right; }
 table.table thead .sorting_desc_disabled { background: asset-url('pagaxian/datatables/sort_desc_disabled.png') no-repeat center right; }
+
+.table thead > tr > th,
+.table tbody > tr > th,
+.table tfoot > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td,
+.table tfoot > tr > td {
+  padding: 3px;
+  &.sorting, &.sorting_asc, &.sorting_desc, &.sorting_asc_disabled, &.sorting_desc_disabled {
+    padding-right: 15px;
+  }
+}
+
+table.table > thead > tr > th,
+table.table > thead > tr > td {
+  vertical-align: middle;
+}
+
+// pagination
+// -----------------------------------------------------------------
+.dataTables_paginate {
+  float: right;
+  .pagination {
+    margin: 0;
+  }
+}
+
+// derived from legacy/main/datatable_jui.scss
+// -----------------------------------------------------------------
+
+.dataTables_wrapper {
+  position: relative;
+  margin-bottom: 15px;
+  width: 100%;
+  min-height: 0;
+  overflow-x: auto;
+  //overflow-y: hidden;
+
+  div.dataTables_filter,
+  div.dataTables_length {
+    label, select, input {
+      margin-bottom: 0px;
+      font-weight: normal;
+    }
+    select, input {
+      background-color: #FFFFFF;
+      border: 1px solid #CCCCCC;
+      border-radius: 4px 4px 4px 4px;
+      color: #555555;
+      display: inline-block;
+      padding: 4px 6px;
+      vertical-align: middle;
+      width: 75px;
+    }
+  }
+  div.dataTables_filter {
+    float: right;
+  }
+
+  div.dataTables_processing {
+    width: 110px;
+    display: block;
+    position: absolute;
+    margin: 0 auto 0 45%;
+    padding: 4px 5px;
+    border: 0;
+    text-align: center;
+    background-color: #666;
+    color: #fff;
+    .border-radius(5px);
+    z-index: 99;
+  }
+
+  table.display  {
+    td {
+      a.chain {
+        display: block;
+        font-weight: bold;
+      }
+      a.brand {
+        display: block;
+        padding-left: 16px;
+      }
+    }
+  }
+}
